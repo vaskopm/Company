@@ -39,11 +39,13 @@ namespace CompanyBackOffice
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Run(async (context) =>
+            else
             {
-                await context.Response.WriteAsync("Web APIs for CRUD operations with Employees");
-            });
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseMvc(); 
         }
     }
 }
