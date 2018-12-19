@@ -31,6 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="controllers\employeesCtrl.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="public\AdminLTE\bower_components\bootstrap-colorpicker\dist\js\bootstrap-colorpicker.js" />
     <Compile Include="public\AdminLTE\bower_components\bootstrap-colorpicker\dist\js\bootstrap-colorpicker.min.js" />
     <Compile Include="public\AdminLTE\bower_components\bootstrap-colorpicker\docs\helpers\code\index.js" />
@@ -3751,6 +3754,14 @@
     <Compile Include="public\AdminLTE\plugins\pace\pace.min.js" />
     <Compile Include="public\AdminLTE\plugins\timepicker\bootstrap-timepicker.js" />
     <Compile Include="public\AdminLTE\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Compile Include="public\javascripts\angular-employees.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\javascripts\angular-route.js" />
+    <Compile Include="public\javascripts\angular.js" />
+    <Compile Include="routes\employees.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Content Include="package.json" />
@@ -7153,8 +7164,14 @@
     <Content Include="public\AdminLTE\plugins\pace\pace.min.css" />
     <Content Include="public\AdminLTE\plugins\timepicker\bootstrap-timepicker.css" />
     <Content Include="public\AdminLTE\plugins\timepicker\bootstrap-timepicker.min.css" />
+    <Content Include="public\list.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
+    <Content Include="views\employees.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\error.html">
       <SubType>Code</SubType>
     </Content>
@@ -7166,6 +7183,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="controllers\" />
     <Folder Include="public\" />
     <Folder Include="public\AdminLTE\" />
     <Folder Include="public\AdminLTE\bower_components\" />
